@@ -51,7 +51,7 @@ public class MascotaController {
 	public String crearMascota(Mascota mascota, Model model) {
 		model.addAttribute("listaColores", colorServiceImpl.listar());
 		model.addAttribute("listaCaracteres", caracterServiceImpl.listar());
-		model.addAttribute("listaTamanos", tamanoService.lista);
+		model.addAttribute("listaTamanos", tamanoService.listar());
 
 		return "voluntario/formMascota";
 	}
